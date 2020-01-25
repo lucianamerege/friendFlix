@@ -17,14 +17,13 @@ class CreateSeriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('nome');
             $table->longText('sinopse');
-            $table->integer('favoritos');
-            $table->unsignedBigInteger('user_id')->nullable();
+            $table->integer('numero_favoritos')->default(0);
+            $table->integer('numero_episodios');
+            $table->integer('ano_lancamento');
+            $table->integer('numero_comentarios')->default(0);
             $table->timestamps();
         });
 
-        Schema::table('series', function (Blueprint $table){
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-        });
     }
 
     /**

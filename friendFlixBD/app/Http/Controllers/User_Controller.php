@@ -13,6 +13,7 @@ class User_Controller extends Controller
         $user->name=$request->name;
         $user->email=$request->email;
         $user->password=$request->password;
+        $user->username=$request->username;
         $user->save();
 
         return response()->json([$user]);
@@ -36,11 +37,14 @@ class User_Controller extends Controller
             if($request->name){
                 $user->name = $request->name;
             }
-            else if($request->email){
+            if($request->email){
                 $user->email = $request->email;
             }
-            else if($request->password){
+            if($request->password){
                 $user->password = $request->password;
+            }
+            if($request->username){
+                $user->username = $request->username;
             }
             else{
                 return response()->json(['insira o parâmetro a ser atualizado']);
@@ -51,7 +55,6 @@ class User_Controller extends Controller
         else{
             return response()->json(['Este user não existe']);
         }
-
     }
 
     public function deleteUser($id){

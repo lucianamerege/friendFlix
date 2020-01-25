@@ -22,3 +22,15 @@ Route::get('mostraUser/{id}', 'User_Controller@showUser');
 Route::post('criaUser', 'User_Controller@createUser');
 Route::put('atualizaUser/{id}', 'User_Controller@updateUser');
 Route::delete('deletaUser/{id}', 'User_Controller@deleteUser');
+
+
+
+Route::middleware('auth:api')->get('/comment', function (Request $request) {
+    return $request->comment();
+});
+
+Route::get('listaComment', 'Comment_Controller@listComment');
+Route::get('mostraComment/{id}', 'Comment_Controller@showComment');
+Route::post('criaComment', 'Comment_Controller@createComment');
+Route::put('atualizaComment/{id}', 'Comment_Controller@updateComment');
+Route::delete('deletaComment/{id}', 'Comment_Controller@deleteComment');
