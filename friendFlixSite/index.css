@@ -42,8 +42,8 @@ li a:hover{
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(2,50%);
     text-align: center;
-    padding-top: 170px;
-    padding-bottom: 60px;
+    padding-top: 200px;
+    padding-bottom: 90px;
     transition: 1s;
 }
 .quemSomos:hover{
@@ -58,18 +58,25 @@ li a:hover{
 }
 .app{
     background-color: black;
-    color: white;
+    color:white;
     font-family: 'Open Sans', sans-serif;
     font-size:1.5em;
-    padding-top:40px;
-    padding-bottom:40px;
+    padding-top:100px;
+    padding-bottom:100px;
     border:solid 1px black;
+    border-radius:0 0 85% 85%/30%;
+}
+.appContainer{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+    margin-bottom: 200px;
 }
 
 .menuzinho{
     width:100%;
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     padding-top: 40px;
     padding-bottom: 60px;
 }
@@ -79,13 +86,12 @@ li a:hover{
 }
 
 .menuCapas{
-    width:90%;
+    width:100%;
     height:60%;
     display:flex;
     flex-direction: row;
     justify-content: center;
-    border:solid 1px yellow;
-    border-radius: 12px;
+    background-color: #a8a8a8;
 }
 .capas img{
     height:auto;
@@ -97,12 +103,22 @@ li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;  
+    transition: .5s;
 }
 .capas:hover{
     margin: 5px;
 }
 
-div{
-    
+footer{
+    background-color:black;
+    color:white;
+    font-size:2em;
+    margin-bottom:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body{
+    margin:0;
 }
