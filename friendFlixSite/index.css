@@ -12,10 +12,10 @@ li{
     display:block;
 }
 li h1{
-    margin-left: 20px;
+    margin-left: 40px;
     float:left;
     font-family: 'Bebas Neue', cursive;
-    font-size:1.5em;
+    font-size:3em;
 }
 
 li a{
@@ -27,6 +27,7 @@ li a{
     border:none;
     float:right;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size:1.5em;
     transition: 1s;
 }
 li a:hover{
@@ -41,7 +42,7 @@ li a:hover{
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(2,50%);
     text-align: center;
-    padding-top: 100px;
+    padding-top: 170px;
     padding-bottom: 60px;
     transition: 1s;
 }
@@ -50,13 +51,58 @@ li a:hover{
 }
 #titulo{
     font-family: 'Open Sans', sans-serif;
+    font-size:2em;
+}
+.quemSomos p{
     font-size:1.5em;
 }
-.capas{
-    margin: 30px;
-    align-items: initial;
+.app{
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.5em;
+    padding-top:40px;
+    padding-bottom:40px;
+    border:solid 1px black;
 }
 
-/* div{
-    border: solid 1px black;
-} */
+.menuzinho{
+    width:100%;
+    background-color: black;
+    color:white;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.menuzinho p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.5em;
+}
+
+.menuCapas{
+    width:90%;
+    height:60%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border:solid 1px yellow;
+    border-radius: 12px;
+}
+.capas img{
+    height:auto;
+    max-width:100%;
+}
+
+.capas{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;  
+}
+.capas:hover{
+    margin: 5px;
+}
+
+div{
+    
+}
