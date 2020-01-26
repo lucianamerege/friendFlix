@@ -11,4 +11,8 @@ class Comment extends Model
     public function users(){
         return $this->belongsTo('App\User');
     }
+
+    public function series(){
+        return $this->belongsTo('App\Serie');
+    }
 }

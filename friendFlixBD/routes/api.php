@@ -34,3 +34,15 @@ Route::get('mostraComment/{id}', 'Comment_Controller@showComment');
 Route::post('criaComment', 'Comment_Controller@createComment');
 Route::put('atualizaComment/{id}', 'Comment_Controller@updateComment');
 Route::delete('deletaComment/{id}', 'Comment_Controller@deleteComment');
+
+
+
+Route::middleware('auth:api')->get('/serie', function (Request $request) {
+    return $request->serie();
+});
+
+Route::get('listaSerie', 'Serie_Controller@listSerie');
+Route::get('mostraSerie/{id}', 'Serie_Controller@showSerie');
+Route::post('criaSerie', 'Serie_Controller@createSerie');
+Route::put('atualizaSerie/{id}', 'Serie_Controller@updateSerie');
+Route::delete('deletaSerie/{id}', 'Serie_Controller@deleteSerie');
