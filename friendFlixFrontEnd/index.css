@@ -15,7 +15,7 @@ li h1{
     margin-left: 40px;
     float:left;
     font-family: 'Bebas Neue', cursive;
-    font-size:3em;
+    font-size:2em;
 }
 
 li a{
@@ -42,7 +42,7 @@ li a:hover{
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(2,50%);
     text-align: center;
-    padding-top: 250px;
+    padding-top: 200px;
     padding-bottom: 120px;
     transition: 1s;
 }
@@ -55,6 +55,7 @@ li a:hover{
 }
 .quemSomos p{
     font-size:1.5em;
+    padding-right: 20%;
 }
 .app{
     background-color: black;
@@ -67,11 +68,19 @@ li a:hover{
 
 }
 .appContainer{
-    height: 1000px;
+    height:auto;
+    max-width:100%;
     display:grid;
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(2,50%);
     margin-bottom: 10px;
+}
+.appReasons{
+    padding-right:10%;
+}
+.appReasons img{
+    height:auto;
+    max-width:100%;
 }
 
 .menuzinho{
@@ -122,4 +131,6 @@ footer{
 
 body{
     margin:0;
+    height:auto;
+    max-width:100%;
 }
